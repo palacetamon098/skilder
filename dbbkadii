@@ -4977,7 +4977,7 @@ game:GetService("RunService").Stepped:Connect(function()
     end
 end)
 
-local Mastery = Tabs.Player:AddSection("Khác")
+local Mastery = Tabs.Player:AddSection("misc")
 
 
 local ToggleNoClip = Tabs.Player:AddToggle("ToggleNoClip", {Title = "no clip",Description = "", Default = false })
@@ -5950,7 +5950,7 @@ Tabs.Race:AddButton({
 
 
 Tabs.Race:AddButton({
-    Title = "leverCần Gạt",
+    Title = "lever",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(28286.35546875, 14895.3017578125, 102.62469482421875))
@@ -5995,14 +5995,14 @@ Tabs.Race:AddButton({
 })
 
 
-local ToggleHumanandghoul = Tabs.Race:AddToggle("ToggleHumanandghoul", {Title = "Hoàn thành Tộc quỷ + người",Description = "", Default = false })
+local ToggleHumanandghoul = Tabs.Race:AddToggle("ToggleHumanandghoul", {Title = "auto human and ghoul race",Description = "", Default = false })
 ToggleHumanandghoul:OnChanged(function(Value)
     KillAura = Value
 end)
 Options.ToggleHumanandghoul:SetValue(false)
 
 
-local ToggleAutotrial = Tabs.Race:AddToggle("ToggleAutotrial", {Title = "Tụ Động hoàn thành ải",Description = "", Default = false })
+local ToggleAutotrial = Tabs.Race:AddToggle("ToggleAutotrial", {Title = "auto trial",Description = "", Default = false })
 ToggleAutotrial:OnChanged(function(Value)
     _G.AutoQuestRace = Value
 end)
@@ -6501,7 +6501,7 @@ Tabs.Misc:AddButton({
 	end
 })
 
-local Mastery = Tabs.Misc:AddSection("Khác")
+local Mastery = Tabs.Misc:AddSection("misc")
 
 
 local ToggleRejoin = Tabs.Misc:AddToggle("ToggleRejoin", {Title = "auto rejoin", Description = "",Default = true })
@@ -6906,14 +6906,14 @@ local SettingFarm = Tabs.Setting:AddSection("Farming")
             end
             
 
-    local ToggleBypassTP = Tabs.Setting:AddToggle("ToggleBypassTP", {Title = "Di Chuyển Dạng Reset",Description = "", Default = false })
+    local ToggleBypassTP = Tabs.Setting:AddToggle("ToggleBypassTP", {Title = "bypass tele",Description = "", Default = false })
     ToggleBypassTP:OnChanged(function(Value)
         BypassTP = Value
     end)
     Options.ToggleBypassTP:SetValue(false)
 
 
-local ToggleRemove = Tabs.Setting:AddToggle("ToggleRemove", {Title = "Ẩn Dame Đánh Quái",Description = "", Default = true })
+local ToggleRemove = Tabs.Setting:AddToggle("ToggleRemove", {Title = "delete damage",Description = "", Default = true })
 ToggleRemove:OnChanged(function(Value)
     _G.RemoveDameText = Value
     end)
@@ -6930,7 +6930,7 @@ ToggleRemove:OnChanged(function(Value)
         end)
 
         
-local ToggleRemoveNotify = Tabs.Setting:AddToggle("ToggleRemoveNotify", {Title = "Xoá Hết Thông báo",Description = "", Default = false })
+local ToggleRemoveNotify = Tabs.Setting:AddToggle("ToggleRemoveNotify", {Title = "delete notifi",Description = "", Default = false })
 ToggleRemoveNotify:OnChanged(function(Value)
     RemoveNotify = Value
     end)
