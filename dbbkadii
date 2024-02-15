@@ -3480,7 +3480,7 @@ local boss = Tabs.Main:AddSection("Farm Boss")
         end
 
     local DropdownMaterial = Tabs.Main:AddDropdown("DropdownMaterial", {
-        Title = "Chọn Nguyên Liệu",
+        Title = "select material",
         Description = "",
         Values = MaterialList,
         Multi = false,
@@ -3494,7 +3494,7 @@ local boss = Tabs.Main:AddSection("Farm Boss")
     end)
 
     local ToggleMaterial = Tabs.Main:AddToggle("ToggleMaterial", {
-        Title = "Cày Nguyên Liệu",
+        Title = "auto farm material",
         Description = "", 
         Default = false })
 
