@@ -7089,7 +7089,7 @@ local SliderPosY = Tabs.Setting:AddSlider("SliderPosY", {
 SliderPosY:OnChanged(function(Value)
   posY = Value
 end)
-SliderPosY:SetValue(-30)
+SliderPosY:SetValue(30)
 
 local SliderPosZ = Tabs.Setting:AddSlider("SliderPosZ", {
     Title = "Z",
